@@ -1,0 +1,45 @@
+/* MainPage */
+
+#title {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    font-size: 15em;
+    width: 100%;
+    justify-content: center;
+    font-family: 'Tangerine', cursive;
+    color: #ea7097;
+}
+
+#title i {
+    font-size: 0.3em;
+    margin-left: 15px;
+    color: rgb(102, 87, 84);
+}
+#title span{
+    color: #f19886;
+}
+#intro{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+#intro p {
+    width:700px;
+    font-size: 2em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    text-align: center;
+}
+#intro p span{
+    color: #ea7097;
+    font-weight: 200;
+}
+
+#intro p strong{
+    color: #f19886;
+    font-weight: 200;
+}
