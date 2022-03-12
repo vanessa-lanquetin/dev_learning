@@ -8,8 +8,8 @@ div.info:hover span.info_bulle,
 div.info:focus span.info_bulle {
     display: inline;
     position: absolute;
-    transform: translateY(3px);
-    margin-left: 1em;
+    transform: translateY(-5px);
+    margin-left: 7em;
     padding: 2px 5px;
     background: #f19886; 
     color: #fff; 
@@ -24,6 +24,8 @@ div.info strong{
     font-weight: 700;
     font-family: 'Tangerine', cursive;
     font-size: 2em;
+    padding-bottom: 10px;
+    margin-left: 5px;
 }
 .container-tags{
     display: flex;
@@ -45,4 +47,6 @@ div.info strong{
 .container-tags div.info {
     font-size: 1.4em;
     cursor: pointer;
+    display: flex;
+    align-items: center;
 }

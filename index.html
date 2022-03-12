@@ -21,12 +21,30 @@
 </head>
 
 <body>
-    <header id="navBar">
-        <a href="index.html">Accueil</a>
-        <a href="./cours/front.html">HTML & CSS</a>
-        <a href="#">Javascript & jQuery</a>
+    <header id="navBar" class="nav">
+        <a href="../index.html">Accueil</a>
+        <div class="dropdown-1">
+            <button class="buttons">HTML & CSS</button>
+            <div class="content">
+                <a href="./cours/front_html.html">HTML</a>
+                <a href="#">CSS</a>
+            </div>
+        </div>
+        <div class="dropdown-2">
+            <button class="buttons">Javascript & jQuery</button>
+            <div class="content">
+                <a href="#">Javascript</a>
+                <a href="#">jQuery</a>
+            </div>
+        </div>
         <a href="#">Bootstrap</a>
-        <a href="#">PHP et MySQL</a>
+        <div class="dropdown-3">
+            <button class="buttons">PHP & MySQL</button>
+            <div class="content">
+                <a href="#">PHP</a>
+                <a href="#">MySQL</a>
+            </div>
+        </div>
         <a href="#">WordPress</a>
     </header>
     <div id="title">

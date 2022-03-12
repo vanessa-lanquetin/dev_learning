@@ -135,12 +135,14 @@ a {
 	padding: 10px 0;
 }
 
-#navBar a {
+#navBar a,
+.buttons {
 	color: white;
 	font-size: 1.5em;
+	font-family: "Times New Roman";
 }
 
-#navBar a:hover{
+#navBar a:hover {
 	color: #f19886;
 	transform: scale(1.1);
 }
@@ -151,4 +153,53 @@ a {
 	justify-content: center;
 	font-family: "Tangerine", cursive;
 	color: rgb(102, 87, 84);
+}
+
+header {
+	width: 100%;
+	height: 70px;
+	background-color: #3a3a3a;
+	display: flex;
+	align-items: center;
+	position: relative;
+	flex-direction: row;
+	transition: 500ms;
+}
+header button {
+	background-color: transparent;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+/* Ici pour positionner comme on veut .content , on met une position relative à son parent.
+Mainteant .content va se positionner par à dropdown1 */
+header .dropdown-1,
+header .dropdown-2,
+header .dropdown-3 {
+	position: relative;
+	height: 100%; /* Ici on se met une hauteur car content se refère au button pas à la navbar.
+    Du coup onglet 3 n'est plus aligné donc on va mettre un display flex */
+	display: flex;
+}
+/* Pour cacher les sous onglets */
+header .dropdown-1 .content,
+header .dropdown-2 .content,
+header .dropdown-3 .content {
+	display: none;
+}
+/* Ici on les fait s'afficher que au survol de dropdown */
+header .dropdown-1:hover .content,
+header .dropdown-2:hover .content,
+header .dropdown-3:hover .content {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	background-color: rgb(149, 131, 127);
+	/* Ici on veut que notre sous menu soit en bas de la navbar donc on va le positionner avec un top qui fait la meme hauteur que la navbar */
+	top: 50px; /*  La navbar a une hauteur de 70px */
+	left: -10px;
+	width: 110%;
+	padding: 10px 15px;
+	box-sizing: border-box;
+	gap: 10px;
 }

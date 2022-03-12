@@ -17,25 +17,49 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap" rel="stylesheet">
-    <title>Html & Css</title>
+    <title>Html</title>
 </head>
 
 <body>
-    <header id="navBar">
+    <header id="navBar" class="nav">
         <a href="../index.html">Accueil</a>
-        <a href="./cours/front.html">HTML & CSS</a>
-        <a href="#">Javascript & jQuery</a>
+        <div class="dropdown-1">
+            <button class="buttons">HTML & CSS</button>
+            <div class="content">
+                <a href="#">HTML</a>
+                <a href="#">CSS</a>
+            </div>
+        </div>
+        <div class="dropdown-2">
+            <button class="buttons">Javascript & jQuery</button>
+            <div class="content">
+                <a href="#">Javascript</a>
+                <a href="#">jQuery</a>
+            </div>
+        </div>
         <a href="#">Bootstrap</a>
-        <a href="#">PHP et MySQL</a>
+        <div class="dropdown-3">
+            <button class="buttons">PHP & MySQL</button>
+            <div class="content">
+                <a href="#">PHP</a>
+                <a href="#">MySQL</a>
+            </div>
+        </div>
         <a href="#">WordPress</a>
     </header>
-    <h1 class="mainTitle">Html & Css</h1>
-    
+    <h1 class="mainTitle">Html</h1>
     <article class="container-tags">
-        <p id="description"> Survole les balises, pour connaitre leurs fonctions <i class="fas fa-mouse-pointer"></i></p>
-        <div class="info">La balise <strong>< a > </strong><span class="info_bulle">Cette balise permet d'insérer un lien</span></div>
-
+        <p id="description"> Survole les balises, pour connaitre leurs fonctions <i class="fas fa-mouse-pointer"></i>
+        </p>
+        <div class="info"> La balise <strong>
+                < p>
+                    </p>
+            </strong><span class="info_bulle">Cette balise permet d'écrire un paragraphe</span></div>
+        <div class="info">La balise <strong>
+                < a>
+            </strong><span class="info_bulle">Cette balise permet d'insérer un lien</span></div>
     </article>
+
 
 </body>
 
