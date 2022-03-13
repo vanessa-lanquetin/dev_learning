@@ -1,0 +1,5 @@
+.html div.info:hover span.info_bulle,
+.html div.info:focus span.info_bulle {
+    transform: translateY(-5px);
+    margin-left: 7em;
+}

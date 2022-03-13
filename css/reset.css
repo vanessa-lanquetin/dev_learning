@@ -214,8 +214,6 @@ div.info:hover span.info_bulle,
 div.info:focus span.info_bulle {
     display: inline;
     position: absolute;
-    transform: translateY(-5px);
-    margin-left: 7em;
     padding: 2px 5px;
     background: #f19886; 
     color: #fff; 
